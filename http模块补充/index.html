@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //jsonp接口调用
+    // var oscript = document.createElement("script");
+    // oscript.src = "http://localhost:3000/api/aaa?callback=test";
+
+    // document.body.appendChild(oscript);
+
+    // function test (obj) {
+    //   console.log(obj);
+    // }
+
+
+    //cors接口调用
+    fetch("http://localhost:3000/api/aaa")
+      .then(res => res.json())
+      .catch(res => {
+        console.log(res);
+      })
+
+
+    //1111
+
+
+  </script>
+</body>
+
+</html>
